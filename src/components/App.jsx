@@ -15,7 +15,7 @@ import {
 export const App = () => {
   const dispatch = useDispatch();
   const { contacts, filter, name, number } = useSelector(
-    (state = state.contacts)
+    state => state.contacts
   );
 
   useEffect(() => {

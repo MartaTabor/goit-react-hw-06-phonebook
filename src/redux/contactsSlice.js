@@ -18,7 +18,7 @@ const contactsSlice = createSlice({
         contact => contact.name.toLowerCase() === name.trim().toLowerCase()
       );
       if (isExist) {
-        alert(`&{name} is already in contacts`);
+        alert(`${name} is already in contacts`);
       } else {
         state.contacts.push({ id: nanoid(), name, number });
         state.name = '';
